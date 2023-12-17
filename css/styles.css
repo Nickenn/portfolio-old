@@ -202,6 +202,15 @@ footer .link {
     font-size: 30px;
   }
 
+  .container img {
+    max-width: 600px;
+  }
+
+  .about-text {
+    max-width: 436px;
+    font-size: 1.2rem;
+  }
+
   .about {
     flex-direction: row;
     gap: 40px;
@@ -210,11 +219,6 @@ footer .link {
 
   #headshot {
     width: 270px;
-  }
-
-  .about-text {
-    max-width: 436px;
-    font-size: 1.2rem;
   }
 
   footer {
@@ -226,23 +230,10 @@ footer .link {
     align-items: center;
     margin: 0 auto;
   }
-
-  .container img {
-    max-width: 700px;
-  }
 }
 
-@media (min-width: 1035px) {
-  .logo {
-    margin: 27px 0px 0px 10px;
-  }
-
-  .nav-container {
-    order: 2;
-  }
-
-  .nav-desktop ul {
-    flex-wrap: wrap;
-    flex-direction: row;
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
   }
 }
