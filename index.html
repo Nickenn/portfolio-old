@@ -7,29 +7,42 @@
       name="description"
       content="Nicholas Avery, frontend developer based in Trondheim."
     />
-    <link href="css/styles.css" rel="stylesheet" />
-    <title>N. Avery | Frontend developer</title>
+    <link href="css/styles.css" rel="stylesheet" class="cta-btn" />
+    <title>Nicholas Avery | Frontend developer</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li>PROJECTS</li>
           <li>
-            <a href="https://github.com/Nickenn">GitHub</a>
+            <button
+              onclick="window.open('https://github.com/Nickenn', '_blank')"
+              target="_blank"
+              class="cta-btn"
+            >
+              GitHub
+            </button>
           </li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+          <li>
+            <button onclick="window.location.href='#contact'" class="cta-btn">
+              About
+            </button>
+          </li>
+          <li>
+            <button onclick="window.location.href='#contact'" class="cta-btn">
+              Contact
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="projects">
-        <h2>Projects</h2>
-        <h3>
+        <h3>Projects</h3>
+        <h4>
           Here are some of the Projects I have worked on while studying at
           Noroff School of technology and digital media.
-        </h3>
+        </h4>
         <section class="container">
           <div class="logo-container">
             <img
@@ -38,27 +51,29 @@
               class="brand-logos"
             />
           </div>
-          <h3>
+          <h4>
             This assignment was to create a React app for a venue accomodation
             site, based off of a Noroff
             <a class="api-link" href="https://docs.noroff.dev/">API</a>.
-          </h3>
+          </h4>
           <img
             src="/assets/holidaze-screenshot.jpg"
             alt="Screenshot of the Holidaze website."
           />
-          <a
-            class="link"
-            href="https://elegant-druid-919c1b.netlify.app/"
-            target="_blank"
-            >Website</a
-          >
-          <a
-            class="link"
-            href="https://github.com/Nickenn/project-exam-2-nicholas-avery"
-            target="_blank"
-            >GitHub</a
-          >
+          <div class="project-btn">
+            <a
+              class="cta-btn"
+              href="https://elegant-druid-919c1b.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              class="cta-btn"
+              href="https://github.com/Nickenn/project-exam-2-nicholas-avery"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
         </section>
         <section class="container">
           <div class="logo-container">
@@ -68,54 +83,58 @@
               class="brand-logos"
             />
           </div>
-          <h3>This assignment was to build a eCom store using React.</h3>
+          <h4>This assignment was to build a eCom store using React.</h4>
           <img
             src="/assets/gadgets-&-stuff-screenshot.jpg"
             alt="Screenshot of the gagets'n'stuff website."
           />
-          <a
-            class="link"
-            href="https://comforting-smakager-6181da.netlify.app/"
-            target="_blank"
-            >Website</a
-          >
-          <a
-            class="link"
-            href="https://github.com/Nickenn/js-frameworks-ca-nicholas-avery"
-            target="_blank"
-            >GitHub</a
-          >
+          <div class="project-btn">
+            <a
+              class="cta-btn"
+              href="https://comforting-smakager-6181da.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              class="cta-btn"
+              href="https://github.com/Nickenn/js-frameworks-ca-nicholas-avery"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
         </section>
         <section class="container">
-          <h2>ItemHunt</h2>
-          <h3>
+          <h3>ItemHunt</h3>
+          <h4>
             This project is a auction site for bidding on items. Aswell as
             adding new items.
-          </h3>
+          </h4>
           <img
             src="/assets/itemhunt-screenshot.jpg"
             alt="Screenshot of the ItemHunt website."
           />
-          <a
-            class="link"
-            href="https://spectacular-mousse-1a00dd.netlify.app/"
-            target="_blank"
-            >Website</a
-          >
-          <a
-            class="link"
-            href="https://github.com/Nickenn/semester-project-2"
-            target="_blank"
-            >GitHub</a
-          >
+          <div class="project-btn">
+            <a
+              class="cta-btn"
+              href="https://spectacular-mousse-1a00dd.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              class="cta-btn"
+              href="https://github.com/Nickenn/semester-project-2"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
         </section>
       </section>
       <section id="about">
-        <h2>About</h2>
+        <h3>About</h3>
         <div class="container about">
-          <div class="about-image">
+          <div>
             <img
-              class="headshot"
+              id="headshot"
               src="/assets/186564220_286539579794301_1062017544585106523_n.jpg"
               alt="A headshot of me"
             />
@@ -124,36 +143,37 @@
             <p>33 year old man living in Trondheim, Norway.</p>
             <p>
               I have always had a interest for IT, and developing websites
-              turned out to be a great pick for me.
+              turned out to be right up my alley.
             </p>
             <p>I always enjoy learning new things, no matter the challenge!</p>
           </div>
-          <div class="project-btn">
-            <a href="https://github.com/Nickenn" target="_blank" class="cta-btn"
-              >GitHub</a
-            >
-            <a
-              href="https://www.linkedin.com/in/nicholas-avery-85415024a/"
-              target="_blank"
-              class="cta-btn"
-              >LinkedIn</a
-            >
-          </div>
+        </div>
+        <div class="about-links">
+          <a href="https://github.com/Nickenn" target="_blank" class="cta-btn"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/nicholas-avery-85415024a/"
+            target="_blank"
+            class="cta-btn"
+            >LinkedIn</a
+          >
         </div>
       </section>
       <section id="contact">
-        <h2>Contact</h2>
+        <h3>Contact</h3>
         <div class="container">
-          <h3>
-            If you want to get in contact with me, e-mail is the way to go.
-          </h3>
+          <h4>If you want to get in contact with me, email works wonders.</h4>
           <a href="mailto:margrethe.developer@gmail.com" class="link"
             >nickeavery@protonmail.com</a
           >
         </div>
       </section>
       <div>
-        <a class="top-link" href="#top">To the top</a>
+        <i class="bi bi-arrow-up-circle-fill"></i>
+        <a class="top-link" href="#top"
+          ><i class="bi bi-arrow-up-circle-fill"></i>To the top</a
+        >
       </div>
     </main>
     <footer>

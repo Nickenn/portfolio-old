@@ -24,4 +24,4 @@ git clone git@github.com:nickenn/portfolio.git
 ## Contact
 
 - <a href="https://github.com/Nickenn">My GitHub</a>
-- <a href="mailto:nickeavery@protonmaail.com">nickeavery@protonmaail.com</a>
+- <a href="mailto:nickeavery@protonmaail.com">nickeavery@protonmail.com</a>

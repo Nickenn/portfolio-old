@@ -1,17 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-image: url("/assets/iStock-1002864544.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-nav {
-  color: rgb(0, 0, 0);
 }
 
 main {
@@ -34,11 +27,10 @@ main > section {
 }
 
 .container img {
-  max-width: 1200px;
+  max-width: 400px;
   align-items: center;
-  border-radius: 8px;
-
   border-radius: 2px;
+  margin-bottom: 60px;
 }
 
 .logo-container {
@@ -59,15 +51,37 @@ main > section {
   font-size: 1.6rem;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 header ul {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
 
-.container, footer {
+footer {
   display: flex;
   flex-wrap: wrap;
+}
+
+.cta-btn {
+  color: rgb(255, 255, 255);
+  background-color: inherit;
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  color: rgb(11, 104, 162);
 }
 
 li {
@@ -103,6 +117,15 @@ a {
 
 .about-text {
   max-width: 436px;
+  font-size: 0.9rem;
+}
+
+.about-links {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand-logos {
@@ -116,18 +139,20 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-
 }
 
-.container, footer {
+footer {
   flex-direction: column;
   justify-content: center;
 }
 
-.headshot {
+#headshot {
   border-radius: 50%;
-  width: 220px;
+  width: 170px;
+}
+
+.project-btn button {
+  margin: 5px 8px 0px 8px;
 }
 
 footer {
@@ -140,78 +165,84 @@ footer .link {
 }
 
 .top-link {
-  color: black;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 40px;
+  border-radius: 7px;
+  border: 3px solid white;
 }
 
-
 @media (min-width: 770px) {
-  body, main, header, .nav-desktop ul, .about {
-      display: flex;
+  body,
+  main,
+  header,
+  .nav-desktop ul,
+  .about {
+    display: flex;
   }
 
-  body, main, header, .nav-desktop ul {
-      flex-direction: column;
+  body,
+  main,
+  header,
+  .nav-desktop ul {
+    flex-direction: column;
   }
 
   h1 {
-      font-size: 60px;
+    font-size: 60px;
   }
 
   h2 {
-      font-size: 45px;
+    font-size: 45px;
   }
 
   h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
-
   .about {
-      flex-direction: row;
-      gap: 40px;
-      align-items: flex-start;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  #headshot {
+    width: 270px;
   }
 
   .about-text {
-      max-width: 436px;
+    max-width: 436px;
+    font-size: 1.2rem;
   }
 
   footer {
-      padding-top: 100px;
+    padding-top: 100px;
   }
 
-  main, footer {
-      align-items: center;
-      margin: 0 auto;
+  main,
+  footer {
+    align-items: center;
+    margin: 0 auto;
   }
-
-
-
 
   .container img {
-      max-width: 760px;
+    max-width: 700px;
   }
 }
 
 @media (min-width: 1035px) {
   .logo {
-      margin: 27px 0px 0px 10px;
-  }
-  
-  .logo-container {
-      order: 1;
+    margin: 27px 0px 0px 10px;
   }
 
   .nav-container {
-      order: 2;
+    order: 2;
   }
-
 
   .nav-desktop ul {
-      flex-wrap: wrap;
-      flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
-
 }
